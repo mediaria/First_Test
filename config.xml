@@ -1,6 +1,6 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.mediaria-test1" version="1.0.1">
-  <name>Fist Test</name>
-  <description>First test application</description>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.mediaria-test1" version="0.0.1">
+  <name>First Test</name>
+  <description>Primera aplicacion de prueba</description>
   <author href="http://mediaria.com" email="mediaria@mediaria.com">Mediaria Consulting</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
