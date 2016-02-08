@@ -35,7 +35,7 @@
     <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
      <param name="ios-package" value="CDVSplashScreen" />
 </feature>
-  <icon src="icon.png"/>
+  <icon src="www/icon.png" />
   <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
   <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
@@ -74,7 +74,7 @@
   <allow-intent href="geo:*"/>
   <platform name="android">
     <allow-intent href="market:*"/>
-  	<icon src="icon.png"/>    
+  	
   </platform>
   <platform name="ios">
     <allow-intent href="itms:*"/>
