@@ -72,8 +72,8 @@
     <allow-intent href="market:*"/>
     <splash src="res/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
   	<splash src="res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
-  	<splash src="res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
-  	<splash src="pres/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+  	<splash src="pres/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+  	<splash src="res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
     <splash src="res/screen/android/screen-ldpi-landscape.png" density="land-ldpi"/>
   	<splash src="res/screen/android/screen-mdpi-landscape.png" density="land-mdpi"/>
   	<splash src="res/screen/android/screen-hdpi-landscape.png" density="land-hdpi"/>
