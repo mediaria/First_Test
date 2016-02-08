@@ -19,7 +19,7 @@
   <preference name="android-minSdkVersion" value="14"/>
   <preference name="android-installLocation" value="auto"/>
   <preference name="splashscreen" value="splash" />
-  <preference name="SplashScreenDelay" value="10000" />
+  <preference name="SplashScreenDelay" value="3000" />
   <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.device"/>
   <gap:plugin name="org.apache.cordova.device-motion"/>
@@ -32,9 +32,10 @@
   <gap:plugin name="org.apache.cordova.network-information"/>
   <gap:plugin name="org.apache.cordova.splashscreen" />
   <feature name="SplashScreen">
-    <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-     <param name="ios-package" value="CDVSplashScreen" />
-</feature>
+    	<param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    	<param name="ios-package" value="CDVSplashScreen" />
+    	<param name="onload" value="true" />
+  </feature>
   <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
   <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
@@ -77,6 +78,5 @@
   <platform name="ios">
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
-    <splash src="splash.png" />
   </platform>
 </widget>
