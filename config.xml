@@ -1,6 +1,6 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.mediaria.test1" version="0.0.1.1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.mediaria.test1" version="0.0.1.2">
   <name>First Test</name>
-  <description>Primera aplicacion de prueba</description>
+  <description>Primera aplicacion de prueba 0.1</description>
   <author href="http://mediaria.com" email="mediaria@mediaria.com">Mediaria Consulting</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
@@ -36,10 +36,6 @@
   <gap:plugin name="org.apache.cordova.network-information"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
-  <gap:config-file platform="android" parent="/manifest">
-	<activity 
-    android:name="MainActivity" android:screenOrientation="portrait" />
-</gap:config-file>
   <icon src="icon.png"/>
   <icon src="www/res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="www/res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
