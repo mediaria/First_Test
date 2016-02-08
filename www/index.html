@@ -72,8 +72,8 @@
             	</p>
             	<!--<iframe width="auto" height="300px" src="http://mediaria.com"></iframe>-->
             </div>
-			<div>
-				<img width="50" src="http://mediaria.com/phonegap/logo2.jpg">
+			<div><button name="buttonClick" onclick="exitFromApp()">Salir</button>
+<!--				<img width="50" src="http://mediaria.com/phonegap/logo2.jpg">-->
 			</div>
         </div>
         <script type="text/javascript">
@@ -98,7 +98,10 @@
                                     'Device UUID: '     + device.uuid     + '<br />' +
                                     'Device Version: '  + device.version  + '<br />';
             };
-
+            function exitFromApp()
+             {
+                navigator.app.exitApp();
+             }
         </script>
     </body>
 </html>
