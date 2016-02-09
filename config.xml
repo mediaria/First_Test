@@ -20,6 +20,7 @@
   <preference name="android-installLocation" value="auto"/>
   <preference name="splashscreen" value="splash" />
   <preference name="SplashScreenDelay" value="3000" />
+  <preference name="DisallowOverscroll" value="true" />
   <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.device"/>
   <gap:plugin name="org.apache.cordova.device-motion"/>
@@ -66,6 +67,7 @@
   <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
   <access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
+  <allow-navigation href="http://*/*" />
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
