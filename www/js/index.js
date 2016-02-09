@@ -32,6 +32,9 @@ var app = {
 
         document.addEventListener('deviceready', this.onDeviceReady, false);
 
+
+
+
     },
     // deviceready Event Handler
     //
@@ -40,6 +43,9 @@ var app = {
     onDeviceReady: function() {
         
         app.receivedEvent('deviceready');
+
+
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -53,4 +59,61 @@ var app = {
         
         console.log('Received Event: ' + id);
     }
+};
+
+
+
+function onDeviceReady() {
+     
+    var element = document.getElementById('deviceProperties');
+    element.innerHTML = 'Device Model: '    + device.model    + '<br />' +
+                        'Device Cordova: '  + device.cordova  + '<br />' +
+                        'Device Platform: ' + device.platform + '<br />' +
+                        'Device UUID: '     + device.uuid     + '<br />' +
+                        'Device Version: '  + device.version  + '<br />';
+
+    var texto = document.getElementById('boton');   
+        if (device.platform == 'Android'){
+            texto.innerHTML = '<button name="buttonClick" onclick="exitFromApp()">Salir</button>';
+//          } else if (device.platform == 'iOS') { texto.innerHTML = 'Ios';
+        }
+
+    document.addEventListener("backbutton", function(e){
+         if(document.getElementById('#homepage')){
+    /* 
+     Event preventDefault/stopPropagation not required as adding backbutton
+      listener itself override the default behaviour. Refer below PhoneGap link.
+    */
+    //e.preventDefault();
+        navigator.app.exitApp();
+        }
+        else {
+        navigator.app.backHistory();
+        }
+    }, false);
+
+
+
+};
+document.addEventListener("deviceready", onDeviceReady, false);
+// Wait for device API libraries to load
+//
+
+
+function pagina2() {
+    window.location = "2.html";
+};
+
+function pagina1() {
+
+    navigator.app.backHistory();
+};
+
+function exitFromApp() {
+    if(navigator.app) {
+        navigator.app.exitApp();
+    } else if (navigator.device) {
+        navigator.device.exitApp();
+    }
+    
 };
