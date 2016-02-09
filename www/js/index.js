@@ -79,7 +79,7 @@ function onDeviceReady() {
         }
 
     document.addEventListener("backbutton", function(e){
-         if(document.getElementById('#homepage')){
+         if(document.getElementById('#app')){
     /* 
      Event preventDefault/stopPropagation not required as adding backbutton
       listener itself override the default behaviour. Refer below PhoneGap link.
